@@ -24,6 +24,9 @@ class InsertDatetimeCommand(sublime_plugin.TextCommand):
         waktu = re.sub(r"Oct", r"Oktober", waktu);
         waktu = re.sub(r"Nov", r"November", waktu);
         waktu = re.sub(r"Des", r"Desember", waktu);
-        
+
+        waktu = waktu.split();
+        waktu = ""+waktu[0]+", "+waktu[2]+" "+waktu[1]+" "+waktu[4]+" pukul "+waktu[3]+"";
+
         for s in sel:
             self.view.replace(edit, s, waktu)
