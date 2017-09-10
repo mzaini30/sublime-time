@@ -16,7 +16,7 @@ class InsertDatetimeCommand(sublime_plugin.TextCommand):
         waktu = re.sub(r"Feb", r"Februari", waktu);
         waktu = re.sub(r"Mar", r"Maret", waktu);
         waktu = re.sub(r"Apr", r"April", waktu);
-        waktu = re.sub(r"May", r"Mai", waktu);
+        waktu = re.sub(r"May", r"Mei", waktu);
         waktu = re.sub(r"Jun", r"Juni", waktu);
         waktu = re.sub(r"Jul", r"Juli", waktu);
         waktu = re.sub(r"Aug", r"Agustus", waktu);
